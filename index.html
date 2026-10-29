@@ -1,95 +1,371 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Igor Campos, desenvolvedor Full Stack.">
-  <link rel="stylesheet" href="./style.css">
-  <title>Igor Campos | Portfólio</title>
-</head>
-<body>
-  <div class="particulas" aria-hidden="true"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Igor Campos — Quality Assurance e desenvolvimento Full Stack."
+    />
+    <meta name="theme-color" content="#f2efe7" id="theme-color" />
+    <title>Igor Campos — QA & Desenvolvimento</title>
 
-  <nav class="navegacao" aria-label="Navegação principal">
-    <ul class="menu">
-      <li><a href="#inicio" class="menu-link">Início</a></li>
-      <li><a href="#sobre" class="menu-link">Sobre</a></li>
-      <li><a href="#projetos" class="menu-link">Projetos</a></li>
-      <li><a href="#contatos" class="menu-link">Contatos</a></li>
-    </ul>
-  </nav>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-  <main id="inicio" class="cabecalho">
-    <img src="./img/igor.png" alt="Foto de Igor Campos" class="foto-perfil">
-    <h1>Igor Campos</h1>
-    <p class="cabecalho-subtitulo">Desenvolvedor Full Stack</p>
-  </main>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <section id="sobre" class="sobre">
-    <h2 class="sobre-titulo">Sobre Mim</h2>
-    <div class="sobre-caixa">
-      <p class="sobre-paragrafo">
-        Olá! Meu nome é Igor Campos, tenho 24 anos e sou um desenvolvedor Full
-        Stack. Atualmente, estou cursando Ciência da Computação na UESC. Tenho
-        paixão por tecnologia e adoro criar soluções inovadoras através da
-        programação.
-      </p>
-    </div>
-  </section>
+    <header class="site-header" id="topo">
+      <div class="nav-shell">
+        <a class="brand" href="#inicio" aria-label="Igor Campos — início">
+          <span class="brand-mark" aria-hidden="true">IC</span>
+          <span class="brand-name">Igor Campos</span>
+        </a>
 
-  <section id="projetos" class="projetos">
-    <h2 class="projetos-titulo">Meus Projetos</h2>
-    <div class="projetos-caixa">
-      <a class="projetos-card" href="https://github.com/IgorCamps/Gerenciador-de-Gastos" target="_blank" rel="noopener noreferrer">
-        <img src="./img/controle-de-gastos.png" alt="Tela do Gerenciador de Gastos" class="projeto-imagem">
-        <div class="caixa-textos-projeto">
-          <h3 class="info-projetos">Gerenciador de Gastos</h3>
-          <p class="paragrafo-projetos">
-            Um aplicativo web que permite aos usuários criar, editar e gerenciar
-            suas tarefas diárias de forma eficiente.
-          </p>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+          <a class="nav-link is-active" href="#inicio" aria-current="location"
+            >Início</a
+          >
+          <a class="nav-link" href="#sobre">Sobre</a>
+          <a class="nav-link" href="#projetos">Projetos</a>
+          <a class="nav-link" href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Ativar tema escuro"
+            title="Ativar tema escuro"
+          >
+            <svg
+              class="theme-icon theme-icon--sun"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="3.75"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"
+              ></path>
+            </svg>
+            <svg
+              class="theme-icon theme-icon--moon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.5 15.2A8.5 8.5 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"
+              ></path>
+            </svg>
+          </button>
+
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-controls="main-nav"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+          </button>
         </div>
-      </a>
-
-      <article class="projetos-card">
-        <img src="./img/viagem.jpg" alt="Paisagem do projeto Página de viagens" class="projeto-imagem">
-        <div class="caixa-textos-projeto">
-          <h3 class="info-projetos">Página de viagens</h3>
-          <p class="paragrafo-projetos">
-            Uma página interativa com roteiros de viagens, dicas e fotos para
-            inspirar os usuários a explorar novos destinos.
-          </p>
-        </div>
-      </article>
-
-      <article class="projetos-card">
-        <img src="./img/microsoft.png" alt="Tela do projeto Microsoft" class="projeto-imagem">
-        <div class="caixa-textos-projeto">
-          <h3 class="info-projetos">Microsoft</h3>
-          <p class="paragrafo-projetos">
-            Loja virtual moderna com animações e design responsivo para uma
-            experiência de compra agradável.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section id="contatos" class="contatos">
-    <h2 class="contatos-titulo">Entre em Contato</h2>
-    <form class="formulario-contato" id="formulario">
-      <div class="grupo-form">
-        <label class="sr-only" for="nome">Nome</label>
-        <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
       </div>
-      <div class="grupo-form">
-        <label class="sr-only" for="mensagem">Mensagem</label>
-        <textarea placeholder="Digite sua Mensagem" class="campo-form" rows="4" id="mensagem" required></textarea>
-      </div>
-      <button type="submit" class="botao-form">Enviar WhatsApp</button>
-    </form>
-  </section>
+    </header>
 
-  <script src="./script.js"></script>
-</body>
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-grid page-width">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">
+              <span class="signal" aria-hidden="true"></span> QA &
+              Desenvolvimento Full Stack
+            </p>
+            <h1 id="hero-title">
+              Qualidade no detalhe.<br /><em>Código com propósito.</em>
+            </h1>
+            <p class="hero-intro">
+              Sou Igor Campos. Investigo problemas, testo possibilidades e
+              transformo ideias em experiências digitais claras e confiáveis.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button--primary" href="#projetos">
+                Ver projetos
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 17 10-10M8 7h9v9"></path>
+                </svg>
+              </a>
+              <a class="button button--text" href="#contato"
+                >Vamos conversar <span aria-hidden="true">→</span></a
+              >
+            </div>
+
+            <ul class="hero-notes" aria-label="Resumo profissional">
+              <li><span>01</span> Quality Assurance</li>
+              <li><span>02</span> Desenvolvimento Web</li>
+              <li><span>03</span> Ciência da Computação · UESC</li>
+            </ul>
+          </div>
+
+          <figure class="portrait" data-reveal>
+            <div class="portrait-frame">
+              <img
+                src="./img/igor.png"
+                alt="Igor Campos"
+                width="641"
+                height="641"
+                fetchpriority="high"
+              />
+            </div>
+            <figcaption>
+              <span>Igor Campos</span>
+              <span>QA + DEV</span>
+            </figcaption>
+            <span class="portrait-stamp" aria-hidden="true">IC / 01</span>
+          </figure>
+        </div>
+
+        <a class="scroll-cue" href="#sobre" aria-label="Ir para a seção Sobre">
+          <span>Role para explorar</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="section about" id="sobre" aria-labelledby="about-title">
+        <div class="page-width">
+          <header class="section-heading" data-reveal>
+            <p class="section-index">01 / SOBRE</p>
+            <h2 id="about-title">Curiosidade técnica.<br />Olhar crítico.</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-copy" data-reveal>
+              <p class="about-lead">
+                Gosto de entender como as coisas funcionam — e, principalmente,
+                como podem funcionar melhor.
+              </p>
+              <p>
+                Sou estudante de Ciência da Computação na UESC e profissional de
+                Quality Assurance, com interesse em desenvolvimento de software,
+                redes de computadores e cibersegurança. Tenho experiência com
+                testes e análise de aplicações, além de desenvolver projetos com
+                JavaScript, Node.js, Python e bancos de dados.
+              </p>
+              <p>
+                Meu trabalho combina investigação, aprendizado contínuo e a
+                busca por soluções práticas, eficientes e confiáveis.
+              </p>
+            </div>
+
+            <div class="focus-list" data-reveal>
+              <p class="focus-title">Áreas de foco</p>
+              <ul>
+                <li><span>01</span><strong>Quality Assurance</strong></li>
+                <li><span>02</span><strong>JavaScript & Node.js</strong></li>
+                <li>
+                  <span>03</span><strong>Python & Bancos de dados</strong>
+                </li>
+                <li><span>04</span><strong>Redes & Cibersegurança</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section projects"
+        id="projetos"
+        aria-labelledby="projects-title"
+      >
+        <div class="page-width">
+          <header class="section-heading section-heading--split" data-reveal>
+            <div>
+              <p class="section-index">02 / PROJETOS SELECIONADOS</p>
+              <h2 id="projects-title">Ideias que saíram<br />do papel.</h2>
+            </div>
+            <p class="section-summary">
+              Uma seleção de estudos e interfaces construídos para praticar
+              produto, código e experiência.
+            </p>
+          </header>
+
+          <div class="project-grid">
+            <a
+              class="project-card project-card--featured"
+              href="https://github.com/IgorCamps/Gerenciador-de-Gastos"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-reveal
+            >
+              <div class="project-media">
+                <img
+                  src="./img/controle-de-gastos.png"
+                  alt="Imagem do projeto Gerenciador de Gastos"
+                  width="747"
+                  height="497"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-number">01</span>
+              </div>
+              <div class="project-content">
+                <p class="project-type">WEB / FINANÇAS PESSOAIS</p>
+                <h3>Gerenciador de Gastos</h3>
+                <p>
+                  Projeto para registrar, organizar e acompanhar gastos pessoais
+                  de forma simples e objetiva.
+                </p>
+                <span class="project-link"
+                  >Ver no GitHub <span aria-hidden="true">↗</span></span
+                >
+              </div>
+            </a>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="./img/viagem.jpg"
+                  alt="Montagem de destinos do projeto Página de viagens"
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-number">02</span>
+              </div>
+              <div class="project-content">
+                <p class="project-type">WEB / EXPERIÊNCIA</p>
+                <h3>Página de viagens</h3>
+                <p>
+                  Uma experiência visual com roteiros, dicas e imagens pensada
+                  para inspirar novos destinos.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="project-media">
+                <img
+                  src="./img/microsoft.png"
+                  alt="Interface do projeto inspirado na Microsoft Store"
+                  width="640"
+                  height="426"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-number">03</span>
+              </div>
+              <div class="project-content">
+                <p class="project-type">INTERFACE / E-COMMERCE</p>
+                <h3>Microsoft Store</h3>
+                <p>
+                  Estudo de uma loja virtual responsiva, com foco em navegação
+                  clara e apresentação de produtos.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contato"
+        aria-labelledby="contact-title"
+      >
+        <div class="page-width contact-panel" data-reveal>
+          <div class="contact-copy">
+            <p class="section-index">03 / CONTATO</p>
+            <h2 id="contact-title">
+              Tem uma ideia,<br />projeto ou oportunidade?
+            </h2>
+            <p>
+              Me conte um pouco. Ao enviar, abrirei uma conversa pronta no
+              WhatsApp para continuarmos por lá.
+            </p>
+            <p class="contact-note">
+              <span class="signal" aria-hidden="true"></span> Respondo assim que
+              possível.
+            </p>
+          </div>
+
+          <form class="contact-form" id="formulario">
+            <div class="field">
+              <label for="nome">Seu nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Como posso te chamar?"
+                autocomplete="name"
+                maxlength="80"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Sua mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Conte sobre a ideia ou oportunidade..."
+                rows="5"
+                maxlength="800"
+                required
+              ></textarea>
+            </div>
+
+            <button class="button button--submit" type="submit">
+              Enviar pelo WhatsApp
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m7 17 10-10M8 7h9v9"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a
+          class="brand brand--footer"
+          href="#inicio"
+          aria-label="Voltar ao início"
+        >
+          <span class="brand-mark" aria-hidden="true">IC<span>.</span></span>
+          <span class="brand-name">Igor Campos</span>
+        </a>
+        <p>Projetado e desenvolvido com atenção aos detalhes.</p>
+        <p>© <span id="current-year">2026</span></p>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        document.documentElement.classList.add("js");
+        let theme = null;
+
+        try {
+          theme = localStorage.getItem("igor-theme");
+        } catch (_) {}
+
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        document.documentElement.dataset.theme = theme;
+        document.querySelector("#theme-color").content =
+          theme === "dark" ? "#11120f" : "#f2efe7";
+      })();
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
